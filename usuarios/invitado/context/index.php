@@ -1,19 +1,28 @@
+<!-- Sitio web desarrollado por Daniel Dinamarca Tosso -->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Daniel Dinamarca T.</title>
-<!-- Favicon -->
-<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
-<!-- Vista para dispositivos moviles -->
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<!-- Codificacion usada -->
-<meta charset="utf-8"/>
-<meta http-equiv="Content-Type" content="text/html"/>
-<!-- Script para volver arriba -->
-<!-- Script para cargar context Manager -->
-<!-- Script para cargar context Manager acercade-->
-<!-- Script para limitar movimiento del calendario de eventos-->
-<!-- Script para generar ventana modal para eventos y noticias -->
+  <title>Daniel Dinamarca T.</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+  <!-- jQuery slim min 3.2.1 -->
+	<script src="js/jquery.slim.min.js"></script>
+  <!-- Vista para dispositivos moviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- Codificacion usada -->
+  <meta charset="utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html"/>
+  <!-- Script para volver arriba -->
+  <!-- Script para cargar context Manager -->
+  <script type="text/javascript" src="js/contextManager.js"></script>
+  <script type="text/javascript" src="js/invitado.js"></script>
+  <script type="text/javascript" src="js/validator.js"></script>
+  <!-- Script para cargar context Manager acercade-->
+  <!-- Script para limitar movimiento del calendario de eventos-->
+  <!-- Script para generar ventana modal para eventos y noticias -->
+
+  <!-- Hoja estilo Layout1 -->
+  <script type="text/javascript" src="js/responsive.js"></script>
 
 </head>
 <body>

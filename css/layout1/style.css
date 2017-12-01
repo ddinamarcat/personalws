@@ -1,0 +1,435 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900);
+
+/* Daniel Dinamarca Tosso - Layout 2017 */
+/*
+Aqui definir colores corporativos
+
+Azul Oscuro: #03628C - rgb(3, 98, 140)
+Celeste Opaco: #049AC0 - rgb(4, 154, 192)
+Azul Opaco: #036D95 - rgb(3, 109, 149)
+Celeste Claro: #00A9D1 - rgb(0, 169, 209)
+Blanco Crema: #EEF4F6 - rgb(238, 244, 246)
+
+*/
+
+/* Begin: Neutrality Principle Section */
+*,:after,:before{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    line-height: 29px;
+    color: inherit;
+}
+
+html,body{
+    font-size:10px;
+}
+body{-webkit-scrollbar-face-color: #000000;
+-webkit-scrollbar-shadow-color: #000000;
+-webkit-scrollbar-highlight-color:#000000;
+-webkit-scrollbar-3dlight-color: #000000;
+-webkit-scrollbar-darkshadow-color: #000000;
+-webkit-scrollbar-track-color: #000000;
+-webkit-scrollbar-arrow-color: #000000;
+}
+ul,li,a,p,input,footer,h1,h2,h3,h4,table,tr,td,th,form,label,textarea,div,figure{
+    font-size:1.6rem;
+}
+body,ul,li,a,p,input,footer,h1,h2,h3,h4,table,tr,td,th,html,form,label,textarea,div,figure{
+    font-family: 'Open Sans','Liberation Sans','Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 29px;
+    letter-spacing: 0.1rem;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    outline: none;
+}
+@-moz-document url-prefix() {
+    html,body{
+        font-size:10.24px;
+    }
+    /*ul,li,a,p,input,footer,h1,h2,table,tr,td,th,form,label,textarea{
+        letter-spacing: 0.014rem;
+    }*/
+}
+div,section,figure,ul{
+    font-size: 0px;
+    letter-spacing: 0px;
+    line-height: 0px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary, h1, form, label,textarea, div {
+    display: block;
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+li{
+    line-height: 24px;
+}
+/* End: Neutrality Principle Section */
+input{
+    font-weight: 400;
+}
+header{
+    top:0px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: rgb(3, 98, 140);
+}
+body{
+    width:100%;
+    background: rgb(255,255,255);
+}
+textarea{
+    resize: none;
+}
+@media (max-width: 1320px){
+    body{
+        zoom:75%;
+    }
+}
+@media (max-width: 1110px){
+    body{
+        zoom:72%;
+    }
+}
+li > span{
+    font-weight: 700;
+}
+.en-header{
+    width: 100%;
+    letter-spacing: 2px;
+    font-kerning:auto;
+    font-weight: 400;
+    font-size: 2rem;
+    background-color: rgb(255,221,0);
+    color: rgb(37,39,41);
+    padding:15px 26px;
+    margin: 0px;
+    text-align: left;
+}
+.en-header > span{
+    font-weight: 700;
+}
+
+#header-grid{
+    width: 1240px;
+    height: 70px;
+    margin: 0px auto;
+}
+#header-grid > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+#header-grid > div:first-child{
+    height:55px;
+    width: 280px;
+}
+#header-grid > div:first-child > a{
+    height:inherit;
+}
+
+#header-grid > div:first-child > a > img{
+    height:inherit;
+}
+
+#header-grid > div:nth-child(2){
+    width:0px;
+    height:70px;
+}
+
+#header-grid >  div:nth-child(3){
+    width:867px;
+}
+
+#header-grid >  div:nth-child(4){
+    width:70px;
+    height:30px;
+}
+
+#top-menu{
+    background-color: inherit;
+    height:26px;
+}
+
+#top-menu > ul{
+    top:0px;
+    padding-top:0px;
+    margin-top: 0px;
+}
+span.menu{
+    display: none;
+}
+
+#botones-menu-principal > li > a::after{
+    width: 0;
+    height:15%;
+    content: "";
+    display: flex;
+    background-color: inherit;
+}
+
+
+#botones-menu-principal > li.actual > a::after{
+    width: inherit;
+    height:15%;
+    content: "";
+    display: flex;
+    background-color: rgb(255,221,0);
+}
+
+
+#botones-menu-principal > li{
+    display: inline-block;
+    color: rgb(238, 244, 246);
+    height: 26px;
+    font-size: 1.8rem;
+    background-color: inherit;
+    padding: 0px 12px;
+}
+
+#botones-menu-principal > li.no-actual:hover{
+    transition: 1s;
+    color: rgb(37,39,41);
+    background-color: rgb(4, 154, 192);
+}
+
+#botones-menu-principal > li > a{
+    color: inherit;
+    font-weight: 400;
+    font-size:1.5rem;
+    text-decoration: none;
+}
+
+#botones-menu-principal > li > a:active{
+    color:#777777;
+}
+
+#login-button{
+    font-size: 10px;
+    background-color: rgb(255,221,0);
+    color: rgb(37,39,41);
+    width: inherit;
+    height: inherit;
+    transition: 0.6s;
+    padding: 0px;
+}
+
+#login-button:hover{
+    background: rgb(150,120,0);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.boton-amarillo,input[type=button]{
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: rgb(255,221,0);
+    letter-spacing: 1px;
+    color: rgb(37,39,41);
+    width: auto;
+    height: auto;
+    padding:18px 50px;
+    transition: 0.6s;
+    border: 0px;
+    outline: none;
+}
+
+.boton-verde{
+    background: rgb(147, 188, 118);
+    opacity: 0.7;
+    border-style: solid;
+    border: 0px;
+    width:70px;
+    border-color: rgb(127, 168, 98);
+    border-radius: 3px 3px 3px 3px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    color:rgb(255,255,255);
+}
+.boton-verde:hover{
+    transition: 0.4s;
+    opacity: 1;
+}
+
+#contenido{
+    padding:0px;
+    position:relative;
+    margin:0px;
+    width: 100%;
+    min-width: 1280px;
+    min-height: 560px;
+    margin-bottom: 10px;
+}
+#contenido > section{
+    position:relative;
+}
+
+footer{
+    position: relative;
+    padding: 12px 0px 0px 0px;
+    width: 100%;
+    min-width: 1280px;
+    color:rgb(255, 255, 255);
+    top:70px;
+    z-index: 1;
+
+}
+
+footer > section:first-child{
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    position: relative;
+}
+footer > section:last-child{
+    width: 100%;
+    background-color: rgb(37, 39, 41);
+    position: relative;
+}
+
+footer > section:first-child > div{
+    width:1240px;
+    height:300px;
+    position: relative;
+    margin:0 auto;
+}
+footer > section:last-child > div{
+    width:1240px;
+    height:110px;
+    position: relative;
+    margin:0 auto;
+}
+footer > section:last-child > div > div:first-child{
+    width:940px;
+    height:40px;
+    position: absolute;
+    top:40px;
+    left: 0px;
+}
+footer > section:last-child > div > div:last-child{
+    width:300px;
+    height:40px;
+    position: absolute;
+    top:40px;
+    left: 940px;
+    text-align: right;
+}
+
+#slogan{
+    position:relative;
+    top:0px;
+    padding-top:0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 600px;
+    background: url('../../img/handshake.jpg'); /* poner foto aqui por si acaso */
+    background-size: cover;
+    background-position: 0 30%;
+    overflow: hidden;
+}
+#slogan > video{
+    position: absolute;
+    width: 100%;
+    top:-90px;
+}
+#slogan > ul{
+    position: relative;
+    width: inherit;
+    height:inherit;
+    top: 0px;
+    margin: 0 auto;
+    list-style-type: none;
+    background:url("../../img/pattern_wh_2.png");
+}
+#slogan > ul > li{
+    position: relative;
+    width: 100%;
+}
+#slogan > ul > li > h1{
+    color:rgb(235, 235, 235);
+    font-weight:100;
+    font-size: 5.5rem;
+    text-align: center;
+}
+#slogan > ul > li > h1 > span{
+    font-weight: 700;
+    font-size: 5.3rem;
+}
+
+#slogan > ul > li > a{
+
+    color:rgb(235, 235, 235);
+    width:inherit;
+    text-decoration: none;
+
+}
+#slogan > ul > li > a > p{
+    padding-top: 8px;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 7px;
+}
+#slogan > ul > li:first-child{
+    padding-top: 262px;
+}
+#slogan > ul > li:nth-child(2){
+    margin-top: 16px;
+}
+
+#slogan > ul > li:nth-child(3){
+    position: relative;
+    width: 180px;
+    margin: 42px auto 0 auto;
+}
+
+#slogan .boton-slogan > p{
+    background-color: rgb(255,221,0);
+    letter-spacing: 2px;
+    width:inherit;
+    color: rgb(37,39,41);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding:9px 0px;
+    transition: 0.6s;
+}
+#slogan .boton-slogan > p:hover{
+    background: rgb(150,120,0);
+    transition: 0.6s;
+}
+
+#slogan .boton-slogan > p > span{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#contenido > .fixed-sub-menu{
+    position: fixed;
+    top: 70px;
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(245,245,245);
+    z-index: 30;
+}
+.fixed-sub-menu > .sub-menu-header{
+    position: relative;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+.sub-menu-header > h2{
+    display: inline-block;
+    margin: 20px;
+    padding: 0px;
+    vertical-align: middle;
+    width: auto;
+}
